@@ -10,8 +10,9 @@
                 placeholder="Agregar Descripción" name="descripcionInput" [(ngModel)]="descripcionInput" required>
             <input [ngClass]="{redfocus:tipo==='egresoOperacion'}" type="number" class="agregar_valor"
                 placeholder="Valor" name="valorInput" [(ngModel)]="valorInput" required>
-            <button type="submit" class="agregar_btn"><i
-                    [ngClass]="{red:tipo==='egresoOperacion'}" class="ion-ios-checkmark-outline"></i></button>
+            <button type="submit" class="agregar_btn"><mat-icon
+                    [ngClass]="{red:tipo==='egresoOperacion'}">check_circle_outline</mat-icon>
+            </button>
         </div>
     </div>
 </form>
